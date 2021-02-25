@@ -1,14 +1,15 @@
+-- Author: Qulle 2017-12-20
+-- Github: github.com/qulle/tree
+-- Editor: vscode (initially emacs)
+-- Compile: gnatmake ./tree.adb
+-- Run: ./tree --help
+
 with Ada.Text_IO;
 with Ada.Integer_Text_IO;
 with Ada.Float_Text_IO;
 with Ada.Directories;
 with Ada.Command_Line;
 with Ada.Calendar.Formatting;
--- Author:  Qulle 2017-12-20
--- Github:  github.com/qulle/tree
--- Editor:  vscode (initially emacs)
--- Compile: gnatmake tree.adb
--- Run: ./tree --help
 
 procedure Tree is
     package   CL renames Ada.Command_Line;
@@ -27,9 +28,9 @@ procedure Tree is
     FC_MAGENTA : constant String := "[35m";
     FC_CYAN    : constant String := "[36m";
    
-    FC_DIRECTORY  : constant String := FC_GREEN;
-    FC_SIZE       : constant String := FC_CYAN;
-    FC_DATE       : constant String := FC_YELLOW;
+    FC_DIRECTORY : constant String := FC_GREEN;
+    FC_SIZE      : constant String := FC_CYAN;
+    FC_DATE      : constant String := FC_YELLOW;
 
     SPACING         : constant Natural := 6; 
     Num_Files       : Natural := 0;
