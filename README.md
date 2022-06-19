@@ -4,9 +4,13 @@
 ## Screenshot
 ![Screenshot of the program after running with -s flag](images/tree.png?raw=true "Screenshot of the program after running with -s flag")
 
+## Author notes
+I wrote this program during my first year at the University back in 2017. 
+
 ## Compiling
+I compiled using GNATMAKE 7.5.0
 ```
-gnatmake ./tree.adb
+$ gnatmake ./tree.adb
 ```
 
 ## Runtime
